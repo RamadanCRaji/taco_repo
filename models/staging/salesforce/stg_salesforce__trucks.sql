@@ -44,4 +44,4 @@ SELECT DISTINCT -- remove duplicates
     
     opening_date
 
-FROM tacos.raw.trucks
+FROM {{source('salesforce','trucks')}}
